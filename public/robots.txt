@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /components/ 
+Disallow: /redux/
+
+Sitemap: http://localhost:5173/sitemap.xml
