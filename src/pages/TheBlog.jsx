@@ -80,7 +80,7 @@ const TheBlog = () => {
 
       <header className="container mx-auto my-4 lg:px-16" ref={top}>
         <div className="text-center">
-          <h1 className="font-bold text-[20vw] border-y-2 border-base-300 lg:inline-block lg:text-[18.5vw] ">
+          <h1 className="font-bold text-[20vw] border-y-2 border-base-300 lg:inline-block lg:text-[18.5vw]" cy-data="app-title">
             THE BLOG
           </h1>
         </div>
@@ -88,9 +88,9 @@ const TheBlog = () => {
 
       {/* Recent Posts Section */}
       <main className="container mx-auto mb-4 mt-12 px-4 lg:px-20">
-        <h2 className="text-2xl font-semibold mb-8">Recent blog posts</h2>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div>
+        <h2 className="text-2xl font-semibold mb-8" cy-data="recent-posts">Recent blog posts</h2>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2" cy-data="recent-posts-container">
+          <div cy-data="posts-1">
             <Link
               to={`/detail/${recentPosts[0]?.key}`}
               onClick={() =>
@@ -154,8 +154,8 @@ const TheBlog = () => {
 
       {/* All Blog Posts Section */}
       <section className="container mx-auto mt-12 px-4 lg:px-20">
-        <h2 className="text-2xl font-semibold mb-8">All blog posts</h2>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <h2 className="text-2xl font-semibold mb-8" cy-data="all-posts">All blog posts</h2>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3" cy-data="all-posts-container">
           {posts.slice(0, postsPerPage).map((post, index) => (
             <div key={index}>
               <Link

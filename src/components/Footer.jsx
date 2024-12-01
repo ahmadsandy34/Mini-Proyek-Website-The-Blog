@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col text-xl justify-center items-center mt-20 mb-4 bg-base-100 mx-auto lg:mt-12 lg:flex-row lg:px-20 lg:justify-start">
+    <footer className="flex flex-col text-xl justify-center items-center mt-20 mb-4 bg-base-100 mx-auto lg:mt-12 lg:flex-row lg:px-20 lg:justify-start" cy-data="footer">
       <p className="hidden lg:block lg:mr-12">&copy; 2024</p>
       <a
         href="https://twitter.com"

@@ -8,7 +8,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar bg-base-100 mx-auto lg:px-16">
+    <nav className="navbar bg-base-100 mx-auto lg:px-16" cy-data="navbar">
       <div className="flex-1">
         <Link to="/">
           <a className="btn btn-ghost text-lg font-semibold">LumosBlog</a>
